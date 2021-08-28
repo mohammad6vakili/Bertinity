@@ -15,68 +15,110 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+      <!-----------------------------header---------------------------------------->
+        <div id="hamburger-menu">
+          <div class="close-ham-wrapper">
+            <i class="fa fa-times" id="close-ham"></i>
+          </div>
+          <div class="ham-links">
+            <div>
+                <a href="#">About Us</a>
+            </div>
+            <div>
+                <a href="#">Services</a>
+            </div>
+            <div>
+                <a href="#">Bertinity Coin</a>
+            </div>
+            <div>
+                <a href="#">RoadMap</a>
+            </div>
+            <div>
+                <a href="#">Whitepaper</a>
+            </div>
+            <div>
+                <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+        <header class="header">
             <img src="/images/headerLogo.png" class="header-logo" alt="logo">
             <div class="header-links">
                 <div>
-                    <a href="#">About Us</a>
+                      <a href="#">About Us</a>
                 </div>
                 <div>
-                    <a href="#">Services</a>
+                      <a href="#">Services</a>
                 </div>
                 <div>
-                    <a href="#">Bertinity Coin</a>
+                      <a href="#">Bertinity Coin</a>
                 </div>
                 <div>
-                    <a href="#">RoadMap</a>
+                      <a href="#">RoadMap</a>
                 </div>
                 <div>
-                    <a href="#">Whitepaper</a>
+                      <a href="#">Whitepaper</a>
                 </div>
                 <div>
-                    <a href="#">Contact</a>
+                      <a href="#">Contact</a>
                 </div>
             </div>
-        </div>
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <video style="width: 100%;height: 100vh;" loop autoplay preload="metadata">
-                    <source src="/videos/slider1.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                </video> 
+            <div id="hamburger-button">
+              <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <!-------------------------------------body--------------------------------->
+        <main>
+          <section id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/images/1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/3.jpg">
+                </div>
               </div>
-              <div class="carousel-item">
-                <video loop autoplay>
-                    <source src="/videos/slider2.mp4" type="video/mp4">
-                </video> 
-              </div>
-              <div class="carousel-item">
-                <video loop autoplay>
-                    <source src="/videos/slider3.mp4" type="video/mp4">
-                </video> 
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon">
+                  <i class="fa fa-angle-left"></i>
+                </span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+          </section>
+        </main>
+        <!-------------------------------------footer--------------------------------->
+        <footer class="footer">
+          <div class="footer-bg">
+            <div class="footer-input-section">
+              <span>Anonymous Blockchain Ecosystem</span>
+              <div>
+                <input type="text">
+                <button>SIGN UP</button>
               </div>
             </div>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon">
-                <i class="fa fa-angle-left"></i>
-              </span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
+            <div class="footer-social">
+              <div class="footer-social-item">
+                
+              </div>
+            </div>
           </div>
+        </footer>
     </div>
 </body>
-<script src="/script.js"></script>
+<script src="script.js"></script> 
 </html>
