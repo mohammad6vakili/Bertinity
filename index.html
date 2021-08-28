@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://use.fontawesome.com/d742d41545.js"></script>
     <link rel="stylesheet" href="/style.css">
     <title>Bertinity</title>
 </head>
 <body>
-    <div id="hello">hellooooo</div>
+    <div class="wrapper">
+        <div class="header">
+            <img src="/images/headerLogo.png" class="header-logo" alt="logo">
+            <div class="header-links">
+                <div>
+                    <a href="#">About Us</a>
+                </div>
+                <div>
+                    <a href="#">Services</a>
+                </div>
+                <div>
+                    <a href="#">Bertinity Coin</a>
+                </div>
+                <div>
+                    <a href="#">RoadMap</a>
+                </div>
+                <div>
+                    <a href="#">Whitepaper</a>
+                </div>
+                <div>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video style="width: 100%;height: 100vh;" loop autoplay preload="metadata">
+                    <source src="/videos/slider1.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                </video> 
+              </div>
+              <div class="carousel-item">
+                <video loop autoplay>
+                    <source src="/videos/slider2.mp4" type="video/mp4">
+                </video> 
+              </div>
+              <div class="carousel-item">
+                <video loop autoplay>
+                    <source src="/videos/slider3.mp4" type="video/mp4">
+                </video> 
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon">
+                <i class="fa fa-angle-left"></i>
+              </span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+    </div>
 </body>
 <script src="/script.js"></script>
 </html>
