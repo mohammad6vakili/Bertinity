@@ -28,7 +28,7 @@
 #hamburger-menu {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   background-color: white;
   z-index: 10000;
@@ -67,6 +67,18 @@
   font-weight: 700;
   font-size: 16px;
 }
+.header-links>div>a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+.header-links>div>a:hover::after {
+  width: 100%;
+}
 .carousel-inner img {
   width: 100% !important;
   height: 100vh !important;
@@ -97,11 +109,13 @@
   height: 300px;
   background-image: url(/images/footer-pattern.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-input-section {
   width: 100%;
   height: 200px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,33 +124,58 @@
 .footer-input-section > span {
   font-size: 40px;
   color: white;
-  margin-bottom: 20px;
 }
 .footer-input-section > div {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .footer-input-section > div > input {
-  padding: 10px;
+  height: 46px;
   border-radius: 7px 0 0 7px;
   border: none;
+  padding-left: 10px;
 }
 .footer-input-section > div > button {
   border-radius: 0 7px 7px 0;
   border: none;
-  padding: 10px;
+  width: 80px;
+  height: 47px;
   margin-bottom: 0.5px;
   background-color: #ff8303;
   color: white;
+  margin-top: 1.5px;
+  font-size: 14px;
   font-weight: 700;
 }
-.footer-social{
-  width: 100%;
+.footer-social {
+  width: 50%;
+  min-width: 320px;
   height: 100px;
-  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-social-item > div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FF8303;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer-social-item > div > img{
+  width: 30px;
+  height: 30px;
+}
+.footer-social-item > span{
+  color: white;
 }
 /* ---------------------------------------------------------------------------- */
 @media only screen and (max-width: 1100px) {
@@ -162,5 +201,33 @@
   }
   .header-logo {
     margin-left: 20px;
+  }
+}
+@media only screen and (max-width:800px){
+  .footer-social-item > div{
+    width: 45px;
+    height: 45px;
+  } 
+  .footer-social-item > div > img{
+    width: 20px;
+    height: 20px;
+  }
+  .footer-input-section > span {
+    font-size: 30px;
+  } 
+}
+@media only screen and (max-width:500px){
+  .footer-input-section > span {
+    font-size: 18px;
+  }
+  .footer-input-section > div > input {
+    height: 35px;
+    width: 160px;
+  } 
+  .footer-input-section > div > button {
+    width: 70px;
+    height: 36px;
+    font-size: 12px;
+    margin-top: .5;
   }
 }
