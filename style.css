@@ -269,6 +269,7 @@
   margin-top: 20px;
 }
 .footer-input-section > div > input {
+  width: 250px;
   height: 46px;
   border-radius: 7px 0 0 7px;
   border: none;
@@ -356,6 +357,9 @@
   .home-roadmap-title{
     font-size: 30px;
   }
+  .home-second-carousel-title{
+    left: 40%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .footer-input-section > span {
@@ -387,9 +391,15 @@
   .home-roadmap-title{
     font-size: 24px;
   }
+  .home-second-carousel-title{
+    left: 37%;
+  }
 }
 @media only screen and (max-width:400px){
   .youtube-player-desc{
     font-size: 14px;
+  }
+  .home-second-carousel-title{
+    left: 33%;
   }
 }
