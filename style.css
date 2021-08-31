@@ -164,11 +164,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
   color: rgba(0, 0, 0, 0.705);
   margin-top: 10px !important;
 }
-.home-document-item:hover{
+.home-document-item:hover {
   border: none;
   background-color: #ff8303;
   color: white !important;
@@ -180,10 +180,10 @@
   text-align: center;
   margin-top: 20px;
 }
-.home-document-item>button{
+.home-document-item > button {
   width: 70%;
   height: 50px;
-  border:none;
+  border: none;
   margin-bottom: 10px;
   background-color: black;
   color: white;
@@ -191,7 +191,92 @@
   font-weight: 700;
   border-radius: 10px;
 }
-.posts{
+.about-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/aboutHeader.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-banner > span:nth-child(1) {
+  color: #ff8303;
+  font-size: 18px;
+  font-weight: 700;
+}
+.about-banner-animation {
+  width: 100%;
+  height: 70px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+}
+.about-banner > span:nth-child(3) {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.about-banner-first {
+  display: flex;
+}
+.about-first-odd {
+  opacity: 0;
+  -webkit-animation-name: first;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.about-first-even {
+  opacity: 0;
+  -webkit-animation-name: first;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.about-banner-second {
+  display: flex;
+  position:absolute;
+}
+.about-second-odd {
+  opacity: 0;
+  -webkit-animation-name: second;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.about-second-even {
+  opacity: 0;
+  -webkit-animation-name: second;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes first {
+  0%   {opacity: 0;}
+  25% {opacity: 1;}
+  30% {opacity: 1;}
+  40% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes second {
+  0%   {opacity: 0;}
+  25% {opacity: 1;}
+  30% {opacity: 1;}
+  40% {opacity: 1;}
+  75% {opacity: 0;}
+  100% {opacity: 0;}
+}
+.posts {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -199,34 +284,34 @@
   align-items: center;
   margin-top: 150px;
 }
-.posts-item{
+.posts-item {
   width: 320px;
   height: 250px;
-  border-radius:10px;
+  border-radius: 10px;
   margin: 15px !important;
   position: relative;
   cursor: pointer;
 }
-.post-hover-bg{
+.post-hover-bg {
   background-color: rgba(255, 255, 255, 0);
   width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
   top: 0;
   right: 0;
   border-radius: 10px;
-  transition: all 0.1s ease-in-out; 
+  transition: all 0.1s ease-in-out;
 }
-.post-hover-bg:hover{
-  background-color: rgba(255,133,3,0.3);
+.post-hover-bg:hover {
+  background-color: rgba(255, 133, 3, 0.3);
 }
-.posts-item>img{
+.posts-item > img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-.posts-item>p{
-  position:absolute;
+.posts-item > p {
+  position: absolute;
   right: 0;
   width: 100%;
   text-align: center;
@@ -354,10 +439,10 @@
   .footer-input-section > span {
     font-size: 30px;
   }
-  .home-roadmap-title{
+  .home-roadmap-title {
     font-size: 30px;
   }
-  .home-second-carousel-title{
+  .home-second-carousel-title {
     left: 40%;
   }
 }
@@ -380,26 +465,26 @@
     margin-top: 5px;
     font-weight: 700;
   }
-  .youtube-player-title{
+  .youtube-player-title {
     font-size: 16px;
     font-weight: 900;
   }
-  .youtube-player-desc{
+  .youtube-player-desc {
     font-size: 18px;
     margin-top: 15px;
   }
-  .home-roadmap-title{
+  .home-roadmap-title {
     font-size: 24px;
   }
-  .home-second-carousel-title{
+  .home-second-carousel-title {
     left: 37%;
   }
 }
-@media only screen and (max-width:400px){
-  .youtube-player-desc{
+@media only screen and (max-width: 400px) {
+  .youtube-player-desc {
     font-size: 14px;
   }
-  .home-second-carousel-title{
+  .home-second-carousel-title {
     left: 33%;
   }
 }
