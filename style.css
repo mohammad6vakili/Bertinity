@@ -550,7 +550,7 @@ main {
   background-size: contain;
   position: relative;
 }
-.services-banner-first {
+.services-banner-first , .token-banner-first {
   position: absolute;
   font-size: 60px;
   color: white;
@@ -559,6 +559,10 @@ main {
   left: 30%;
   display: flex;
   letter-spacing: 1px;
+  z-index: 5846565;
+}
+.token-banner-first{
+  left: 25%;
 }
 .services-bg-cover {
   width: 100%;
@@ -608,7 +612,6 @@ main {
   height: 152px;
   top: 25%;
   left: 25%;
-  z-index: 15156456541654;
 }
 .services-bg-line {
   position: absolute;
@@ -772,6 +775,73 @@ main {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
   text-decoration: none;
 }
+/* ------------------------------------------token-----------------------------------------------*/
+.token-underline-text{
+  width: 300px;
+  font-size: 18px;
+  position:absolute;
+  left: 40%;
+  top: 60%;
+  color: white;
+}
+.token-main{
+  width: 100%;
+}
+.token-card-odd , .token-card-even{
+  width: 100%;
+  padding: 40px 0;
+  background-color: #EEF2FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.token-card-text-odd , .token-card-media-odd , .token-card-text-even , .token-card-media-even{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.token-card-text-even-undertext{
+  width: 60%;
+  color: #485776;
+  font-weight: 600;
+}
+.token-card-media-odd>img , .token-card-media-even>img{
+  width: 65%;
+  height: 90% !important;
+  margin-bottom: 50px;
+}
+.lottie-animation{
+  width:75%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.token-card-text-odd>span,
+.token-card-text-even>span{
+  width: 60%;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.token-card-text-odd>span:after,.token-card-text-even>span:after{
+  content: "";
+  display: block;
+  width: 40%;
+  height: 4px;
+  background: #ff8303;
+  transition: width 0.3s;
+  margin-top: 20px;
+}
+.token-supply{
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+  background: rgb(255, 255, 255) url("/images/token.png") no-repeat scroll center center / cover;
+}
 /* ---------------------------------------------------------------------footer---------------------------------------------------------------- */
 .posts {
   width: 100%;
@@ -905,7 +975,7 @@ main {
   .about-main-banner-one > div > div {
     margin: 20px 190px 20px 0;
   }
-  .services-banner-first {
+  .services-banner-first , .token-banner-first {
     left: 10%;
   }
   .services-bg-circle {
@@ -945,6 +1015,22 @@ main {
   .header-logo {
     margin-left: 20px;
   }
+  .token-underline-text{
+    left: 35%;
+  }
+  .token-card-text-odd>span,.token-card-text-even>span{
+    width: 80%;
+  }
+  .token-card-media-odd>img,.token-card-media-odd>img{
+    width: 80%;
+    height: 80% !important;
+  }
+  .lottie-animation{
+    width:90%;
+  }
+  .token-card-text-even-undertext{
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .footer-social-item > div {
@@ -967,8 +1053,11 @@ main {
   .about-main-banner-one > img {
     right: -500px;
   }
-  .services-banner-first {
+  .services-banner-first , .token-banner-first {
     left: 12%;
+  }
+  .token-banner-first{
+    font-size: 40px;
   }
   .services-bg-line > div {
     left: 30%;
@@ -978,6 +1067,29 @@ main {
   }
   .contact-header-banner > span {
     font-size: 50px;
+  }
+  .token-underline-text{
+    left: 33%;
+  }
+  .token-card-odd{
+    flex-direction: column-reverse;
+  }
+  .token-card-even{
+    flex-direction: column;
+  }
+  .token-card-text-odd , .token-card-media-odd,.token-card-text-even, .token-card-media-even{
+    width: 100% !important;
+  }
+  .token-card-media-odd>img,.token-card-media-even>img{
+    width: 45%;
+  }
+  .token-card-text-odd>span,.token-card-text-even>span{
+    width: 90%;
+  }
+  .token-card-text-even-undertext{
+    width: 90%;
+  }.lottie-animation{
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1002,6 +1114,22 @@ main {
   }
   .contact-main-form-social>div{
     width: 380px;
+  }
+  .token-banner-first{
+    font-size: 28px;
+    left:10%;
+  }
+  .token-underline-text{
+    left: 10%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .token-card-text-odd>span,
+  .token-card-text-even>span{
+    font-size: 24px;
+  }
+  .lottie-animation{
+    width: 70%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1055,6 +1183,9 @@ main {
   .services-explore-text {
     left: 12%;
   }
+  .lottie-animation{
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .youtube-player-desc {
@@ -1068,5 +1199,9 @@ main {
   }
   .contact-header-banner > span {
     font-size: 28px;
+  }
+  .token-banner-first{
+    font-size: 22px;
+    left:10%;
   }
 }
