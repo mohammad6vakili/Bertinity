@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.71 8C11.6623 8 10 9.66228 10 11.71V40H30V11.71C30 9.66228 28.3377 8 26.29 8H13.71ZM8 11.71C8 8.55772 10.5577 6 13.71 6H26.29C29.4423 6 32 8.55772 32 11.71V42H8V11.71Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 40H35V42H5V40Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 24V30C40 32.9593 37.0922 35 34 35H30V33H34C36.4278 33 38 31.4607 38 30V24H40Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 18H44V22.17C44 24.2823 42.2823 26 40.17 26H37.83C35.7177 26 34 24.2823 34 22.17V18ZM36 20V22.17C36 23.1777 36.8223 24 37.83 24H40.17C41.1777 24 42 23.1777 42 22.17V20H36Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38 15V18H36V15H38Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 15V18H40V15H42Z" fill="white"/>
+<path d="M24.1733 13L15 19.6H21L24.1733 13Z" fill="white"/>
+<path d="M15.8267 25.6L25 19H19L15.8267 25.6Z" fill="white"/>
+</svg>
