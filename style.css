@@ -294,19 +294,19 @@ main {
   align-items: center;
 }
 .swip-one{
-background-image:url(/images/carousel5.png) ;
+background-image:url(images/carousel5.png) ;
 }
 .swip-two{
-  background-image:url(/images/carousel4.jpg) ;
+  background-image:url(images/carousel4.jpg) ;
 }
 .swip-three{
-  background-image:url(/images/carousel3.jpg) ;
+  background-image:url(images/carousel3.jpg) ;
 }
 .swip-four{
-  background-image:url(/images/carousel2.jpg) ;
+  background-image:url(images/carousel2.jpg) ;
 }
 .swip-five{
-  background-image:url(/images/carousel1.jpg) ;
+  background-image:url(images/carousel1.jpg) ;
 }
 .video-carousel-title-one,
 .video-carousel-title-two {
@@ -427,7 +427,7 @@ background-image:url(/images/carousel5.png) ;
 .about-banner {
   width: 100%;
   height: 100vh;
-  background-image: url(/images/aboutHeader.jpg);
+  background-image: url(images/aboutHeader.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -592,32 +592,32 @@ background-image:url(/images/carousel5.png) ;
   color: #353942;
 }
 .about-node-one {
-  background-image: url(/images/node1.svg);
+  background-image: url(images/node1.svg);
   top: 13%;
   left: 12%;
 }
 .about-node-two {
-  background-image: url(/images/node2.svg);
+  background-image: url(images/node2.svg);
   top: 70%;
   left: 8%;
 }
 .about-node-three {
-  background-image: url(/images/node3.svg);
+  background-image: url(images/node3.svg);
   top: 80%;
   left: 20%;
 }
 .about-node-four {
-  background-image: url(/images/node4.svg);
+  background-image: url(images/node4.svg);
   top: 10%;
   left: 80%;
 }
 .about-node-five {
-  background-image: url(/images/node5.svg);
+  background-image: url(images/node5.svg);
   top: 49%;
   left: 86%;
 }
 .about-node-six {
-  background-image: url(/images/node6.svg);
+  background-image: url(images/node6.svg);
   top: 87%;
   left: 70%;
 }
@@ -719,7 +719,7 @@ background-image:url(/images/carousel5.png) ;
 .services-header-banner {
   width: 100%;
   height: 100vh;
-  background-image: url(/images/header_services.jpg);
+  background-image: url(images/header_services.jpg);
   background-size: contain;
   position: relative;
 }
@@ -839,7 +839,7 @@ background-image:url(/images/carousel5.png) ;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/header_contact.jpg);
+  background-image: url(images/header_contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1066,7 +1066,7 @@ background-image:url(/images/carousel5.png) ;
 .footer-bg {
   width: 100%;
   height: 300px;
-  background-image: url(/images/footer-pattern.svg);
+  background-image: url(images/footer-pattern.svg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

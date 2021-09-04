@@ -1,75 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://use.fontawesome.com/d742d41545.js"></script>
-    <link rel="stylesheet" href="/style.css">
-    <title>Home | Bertinity</title>
-</head>
-<body>
-    <div class="wrapper">
-      <!-----------------------------header---------------------------------------->
-        <div id="hamburger-menu">
-          <div class="close-ham-wrapper">
-            <i class="fa fa-times" id="close-ham"></i>
-          </div>
-          <div class="ham-links">
-            <div>
-                <a href="#">About Us</a>
-            </div>
-            <div>
-                <a href="#">Services</a>
-            </div>
-            <div>
-                <a href="#">Bertinity Coin</a>
-            </div>
-            <div>
-                <a href="https://www.bertinity.com/images/roadmap.png">RoadMap</a>
-            </div>
-            <div>
-                <a href="https://www.bertinity.com/PDF/whitepaper.pdf">Whitepaper</a>
-            </div>
-            <div>
-                <a href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-        <header class="header">
-            <img src="/images/headerLogo.png" class="header-logo" alt="logo">
-            <div class="header-links">
-                <div>
-                      <a href="#">About Us</a>
-                </div>
-                <div>
-                      <a href="#">Services</a>
-                </div>
-                <div>
-                      <a href="#">Bertinity Coin</a>
-                </div>
-                <div>
-                  <a href="https://www.bertinity.com/images/roadmap.png">RoadMap</a>
-                </div>
-                <div>
-                    <a href="https://www.bertinity.com/PDF/whitepaper.pdf">Whitepaper</a>
-                </div>
-                <div>
-                      <a href="#">Contact</a>
-                </div>
-            </div>
-            <div id="hamburger-button">
-              <i class="fa fa-bars"></i>
-            </div>
-        </header>
-        <!-------------------------------------body--------------------------------->
+<?php
+  /**
+   * Template Name:Home
+   */
+
+get_header(); ?>       
+       <!-------------------------------------body--------------------------------->
         <main>
           <section id="demo" class="carousel slide video-carousel" data-ride="carousel">
               <!-- Indicators -->
@@ -82,8 +17,8 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <video autoplay muted loop width="100%">
-                    <source src="/videos/slider1.webm" type="video/webm">
-                    <source src="/videos/slider1.mp4" type="video/mp4">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider1.webm" type="video/webm">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                   <div class="video-carousel-center-line">
@@ -114,8 +49,8 @@
                 </div>
                 <div class="carousel-item">
                   <video autoplay muted loop width="100%">
-                    <source src="/videos/slider2.webm" type="video/webm">
-                    <source src="/videos/slider2.mp4" type="video/mp4">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider2.webm" type="video/webm">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                   <div class="video-carousel-center-line">
@@ -137,8 +72,8 @@
                 </div>
                 <div class="carousel-item">
                   <video autoplay muted loop width="100%">
-                    <source src="/videos/slider3.webm" type="video/webm">
-                    <source src="/videos/slider3.mp4" type="video/mp4">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider3.webm" type="video/webm">
+                    <source src="<?php echo get_template_directory_uri();?>/videos/slider3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                   <div class="video-carousel-center-line">
@@ -222,19 +157,19 @@
                 <div class="silde-article-bottom">
                   <div>
                     <div>
-                      <img src="/images/Sustainability.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Sustainability.png" alt="Bertinity icon">
                     </div>
                     <div>Boost-up capital raising superior level of privacy (NP-KYC)</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Fingerprint_Icon.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Fingerprint_Icon.png" alt="Bertinity icon">
                     </div>
                     <div>Fast and simple tradeable security token platform <br> No centralized desicion making as a paradigm</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Citizen.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Citizen.png" alt="Bertinity icon">
                     </div>
                     <div>Facilitate foreign stock investment <br> Facilitating p2p transactions and collabrations</div>
                   </div>
@@ -267,19 +202,19 @@
                 <div class="silde-article-bottom">
                   <div>
                     <div>
-                      <img src="/images/towUSer.svg" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/towUSer.svg" alt="Bertinity icon">
                     </div>
                     <div>Earning block rewards due POS algorithm <br> Security token and stock trade <br> commission discount</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Smart_Charging.svg" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Smart_Charging.svg" alt="Bertinity icon">
                     </div>
                     <div>Potential value increases due to project growth <br> High distribution rate</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Usage_Based_Insurance.svg" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Usage_Based_Insurance.svg" alt="Bertinity icon">
                     </div>
                     <div>Invest in ICOs that are listed through our exchange by bertinity coin or Potential to participate icos by bertinity coin</div>
                   </div>
@@ -312,19 +247,19 @@
                 <div class="silde-article-bottom">
                   <div>
                     <div>
-                      <img src="/images/Urban_Mobility_Management.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Urban_Mobility_Management.png" alt="Bertinity icon">
                     </div>
                     <div>Security token trading ability <br> Demo trading</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Open___Transparent_Data.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Open___Transparent_Data.png" alt="Bertinity icon">
                     </div>
                     <div>No withdrawal ceiling <br> Superior level of privacy (NO-KYC)</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Peer_to_Peer_Collaboration.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Peer_to_Peer_Collaboration.png" alt="Bertinity icon">
                     </div>
                     <div>Providing Premium API <br> Safe and secure trading engine</div>
                   </div>
@@ -357,19 +292,19 @@
                 <div class="silde-article-bottom">
                   <div>
                     <div>
-                      <img src="/images/Track___Trace.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Track___Trace.png" alt="Bertinity icon">
                     </div>
                     <div>Easy to install and deploy</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Customs___Border_Management.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Customs___Border_Management.png" alt="Bertinity icon">
                     </div>
                     <div>No withdrawal ceiling <br> Fully anonymous</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Digital_Twins.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Digital_Twins.png" alt="Bertinity icon">
                     </div>
                     <div>Multiple assets as payment</div>
                   </div>
@@ -402,19 +337,19 @@
                 <div class="silde-article-bottom">
                   <div>
                     <div>
-                      <img src="/images/Track___Trace.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Track___Trace.png" alt="Bertinity icon">
                     </div>
                     <div>Crypto Forex Services</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Customs___Border_Management.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Customs___Border_Management.png" alt="Bertinity icon">
                     </div>
                     <div>Escrow service for P2P trades</div>
                   </div>
                   <div>
                     <div>
-                      <img src="/images/Digital_Twins.png" alt="Bertinity icon">
+                      <img src="<?php echo get_template_directory_uri();?>/images/Digital_Twins.png" alt="Bertinity icon">
                     </div>
                     <div>Public Blockchain Network (MainNet) and Crypto Wallet</div>
                   </div>
@@ -433,114 +368,44 @@
           </div>
           <section class="home-roadmap">
             <p class="home-roadmap-title">Road Map</p>
-            <img src="/images/roadmap.png" alt="roadmap">
+            <img src="<?php echo get_template_directory_uri();?>/images/roadmap.png" alt="roadmap">
           </section>
           <section class="home-document">
             <p class="home-document-title">Document</p>
             <div class="home-document-items">
-              <div class="home-document-item">
+              <a href="https://www.bertinity.com/PDF/whitepaper.pdf" class="home-document-item" style="text-decoration:none;">
                 <p>White Paper</p>
                 <button>Download (PDF)</button>
-              </div>
-              <div class="home-document-item" style="margin: 0 20px;">
+              </a>
+              <a href="https://www.bertinity.com/PDF/presentation.pdf" class="home-document-item" style="margin: 0 20px;text-decoration:none;">
                 <p>Presentation</p>
                 <button>Download (PDF)</button>
-              </div>
-              <div class="home-document-item">
+              </a>
+              <a href="https://www.bertinity.com/PDF/one-pager.pdf" class="home-document-item" style="text-decoration:none;">
                 <p>One Pager</p>
                 <button>Download (PDF)</button>
-              </div>
+              </a>
             </div>
           </section>
-          <section class="posts">
-            <a href="https://www.bertinity.com/bertinitys-crypto-payment-gateway/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/Crypto-Payment-Gateway-295x300.jpg" alt="post">
-              <p>BERTINITY’S Crypto Payment Gateway</p>
-            </a>
-            <a href="https://www.bertinity.com/bertinitys-decentralized-world-wide-security-token-stock-market/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/bertinity-300x300.jpg" alt="post">
-              <p>Bertinity’s Decentralized World-wide Security Token Stock Market</p>
-            </a>
-            <a href="https://www.bertinity.com/paradigm-shift/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/2.jpg" alt="post">
-              <p>What Is "Paradigam Shift"?</p>
-            </a>
-            <a href="https://www.bertinity.com/unbankunderbank/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/1.jpg" alt="post">
-              <p>unbank/underbank</p>
-            </a>
-            <a href="https://www.bertinity.com/bertinity-is-coming/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/4.jpg" alt="post">
-              <p>Bertinity is Coming</p>
-            </a>
-            <a href="https://www.bertinity.com/why-crypto-anarchism/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/3.jpg" alt="post">
-              <p>Why Crypto-anarchism?</p>
-            </a>
-            <a href="https://www.bertinity.com/hello-world/" class="posts-item">
-              <div class="post-hover-bg"></div>
-              <img src="/images/5.jpg" alt="post">
-              <p>Hello world!</p>
-            </a>
+
+
+          <section class="posts">   
+            <?php
+              if(have_posts()){
+                while(have_posts()){
+                  the_post();
+            ?>
+              <a href="<?php the_permalink(); ?>" class="posts-item">
+                <div class="post-hover-bg"></div>
+                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="post">
+                <p><?php the_title(); ?></p>
+              </a>
+            <?php
+                }
+              }
+            ?>
           </section>
+
+
         </main>
-        <!-------------------------------------footer--------------------------------->
-        <footer class="footer">
-          <div class="footer-bg">
-            <div class="footer-input-section">
-              <span>Anonymous Blockchain Ecosystem</span>
-              <form>
-                <input required placeholder="Email" type="email">
-                <button type="submit">SIGN UP</button>
-              </form>
-            </div>
-            <div class="footer-social">
-              <a href="https://www.youtube.com/channel/UCyY_Vf3CYkCTnfBs4_Gs_EQ" class="footer-social-item">
-                <div>
-                  <img src="/images/Youtube.svg" alt="Youtube">
-                </div>
-                <span>Youtube</span>
-              </a>
-              <a href="https://t.me/bertinity" class="footer-social-item">
-                <div>
-                  <img style="margin-right: 5px;" src="/images/Telegram.svg" alt="Telegram">
-                </div>
-                <span>Telegram</span>
-              </a>
-              <a href="https://twitter.com/bertinity" class="footer-social-item">
-                <div>
-                  <img src="/images/Twitter.svg" alt="Twitter">
-                </div>
-                <span>Twitter</span>
-              </a>
-              <a href="https://www.reddit.com/user/bertinity" class="footer-social-item">
-                <div>
-                  <img src="/images/Reddit.svg" alt="Reddit">
-                </div>
-                <span>Reddit</span>
-              </a>
-              <a href="https://www.linkedin.com/company/bertinity" class="footer-social-item">
-                <div>
-                  <img src="/images/Linkdin.svg" alt="Linkdin">
-                </div>
-                <span>Linkdin</span>
-              </a>
-              <a href="https://www.instagram.com/bertinity.io" class="footer-social-item">
-                <div>
-                  <img src="/images/instagram.svg" alt="Instagram">
-                </div>
-                <span>Instagram</span>
-              </a>
-            </div>
-          </div>
-        </footer>
-    </div>
-</body>
-<script src="script.js"></script> 
-</html>
+<?php get_footer(); ?>
