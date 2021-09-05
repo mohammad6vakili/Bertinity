@@ -9,9 +9,9 @@ document.getElementById('close-ham').onclick=()=>{
     hamMenu.classList.remove('hamburger-open');
 }
 //------------------------------------------carousel----------------------------------------
-$('.carousel').carousel({
-    interval: 6000
-  })
+  $('.carousel').carousel({
+      interval: 6000
+    })
 
   const swiper = new Swiper('.swiper', {
     // Optional parameters

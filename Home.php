@@ -15,7 +15,7 @@ get_header(); ?>
               </ul>
               <!-- The slideshow -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="6000">
                   <video autoplay muted loop width="100%">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider1.webm" type="video/webm">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider1.mp4" type="video/mp4">
@@ -47,7 +47,7 @@ get_header(); ?>
                     <div></div>
                   </span>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="6000">
                   <video autoplay muted loop width="100%">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider2.webm" type="video/webm">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider2.mp4" type="video/mp4">
@@ -70,7 +70,7 @@ get_header(); ?>
                     <div></div>
                   </span>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="6000">
                   <video autoplay muted loop width="100%">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider3.webm" type="video/webm">
                     <source src="<?php echo get_template_directory_uri();?>/videos/slider3.mp4" type="video/mp4">

@@ -245,6 +245,10 @@ main {
   animation-name: slideNodeLoad;
   animation-duration: 1.5s;
 }
+.slide-division-selected:hover{
+  box-shadow: 1px 2px 10px #ff81039a !important;
+  border: 1px solid #ff8303;
+}
 .slide-division-selected>span:nth-child(1){
   position: absolute;
   left: 16% ;
