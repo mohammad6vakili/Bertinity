@@ -7,18 +7,27 @@ get_header(); ?>
         <!-------------------------------------body--------------------------------->
         <main>
             <section class="contact-header-banner">
-                <span>
-                    <span class="service-odd">O</span>
-                    <span class="service-even">u</span>
-                    <span class="service-odd" >r</span>
-                    <span class="service-even" style="margin-left: 10px;">S</span>
-                    <span class="service-odd" >e</span>
-                    <span class="service-even">r</span>
-                    <span class="service-odd" >v</span>
-                    <span class="service-even">i</span>
+                <span style="display:flex">
+                    <span class="service-odd">C</span>
+                    <span class="service-even">o</span>
+                    <span class="service-odd" >n</span>
+                    <span class="service-even">t</span>
+                    <span class="service-odd" >a</span>
                     <span class="service-even">c</span>
+                    <span class="service-odd" style="margin-right:15px">t</span>
+                    <span class="service-even">T</span>
+                    <span class="service-odd">h</span>
+                    <span class="service-even" style="margin-right:15px">e</span>
+                    <span class="service-odd">B</span>
                     <span class="service-even">e</span>
-                    <span class="service-even">s</span>
+                    <span class="service-odd">r</span>
+                    <span class="service-even">t</span>
+                    <span class="service-odd">i</span>
+                    <span class="service-even">n</span>
+                    <span class="service-odd">i</span>
+                    <span class="service-even">t</span>
+                    <span class="service-odd">y</span>
+
                 </span>
             </section>
             <section class="contact-main">

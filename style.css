@@ -5,6 +5,7 @@
 }
 .wrapper {
   width: 100%;
+  min-height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -1000,10 +1001,10 @@ background-image:url(images/carousel5.png) ;
   width: 100%;
   position: relative;
   height: 500px;
-  background-size: 100% auto !important;
+  /* background-size: 100% auto !important;
   background-position: left bottom !important;
-  background: rgb(255, 255, 255) url("/images/token.png") no-repeat scroll
-    center center / cover;
+  background: rgb(255, 255, 255) url(/images/token.png) no-repeat scroll
+    center center / cover; */
 }
 .token-supply > span {
   position: absolute;
