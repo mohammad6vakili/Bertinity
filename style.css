@@ -973,7 +973,7 @@ background-image:url(images/carousel5.png) ;
 }
 .token-card-media-odd > img,
 .token-card-media-even > img {
-  width: 65%;
+  width: 50%;
   height: 90% !important;
   margin-bottom: 50px;
 }
