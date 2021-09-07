@@ -26,36 +26,16 @@
   margin-left: 50px;
 }
 #hamburger-button {
-  display: none;
-}
-#hamburger-menu {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: white;
-  z-index: 10000;
-  flex-direction: column;
-}
-.ham-links > div {
-  font-size: 30px;
-  margin: 0 0 35px 30px;
-}
-.ham-links > div > a {
-  color: #131f37;
-  text-decoration: none;
-  font-weight: 600;
+  display: none !important;
 }
 .close-ham-wrapper {
   width: 100%;
-  height: 80px;
-  display: flex;
+  height: 50px;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   padding-right: 30px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .close-ham-wrapper > i {
   cursor: pointer;
@@ -72,7 +52,7 @@
   font-weight: 700;
   font-size: 16px;
 }
-.header-links > div > a::after {
+.header-links > li > a::after {
   content: "";
   display: block;
   width: 0;
@@ -81,8 +61,18 @@
   transition: width 0.3s;
   margin-top: 5px;
 }
-.header-links > div > a:hover::after {
+.header-links > li > a:hover::after {
   width: 100%;
+}
+.header-links>li{
+  color: white !important;
+  list-style-type: none !important ;
+}
+.header-links>li>a{
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 18px;
 }
 /* ---------------------------------------------------------------body-------------------------------------------------------------------- */
 main {
@@ -1183,8 +1173,43 @@ background-image:url(images/carousel5.png) ;
   .header-links {
     display: none;
   }
+  .show-menu{
+    display:flex !important ;
+    flex-direction: column-reverse;
+    padding-left: 50px;
+  }
+  .header-ham{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 15456126574854165461564584;
+  }
+  .header-links > li > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s;
+    margin-top: 5px;
+  }
+  .header-links > li > a:hover::after {
+    width: 100px;
+  }
+  .header-links>li{
+    color: rgb(0, 0, 0) !important;
+    list-style-type: none !important ;
+    margin-bottom: 10px;
+  }
+  .header-links>li>a{
+    width: unset;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 600;
+    font-size: 24px;
+  }
   #hamburger-button {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     font-size: 30px;

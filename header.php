@@ -19,53 +19,20 @@
 <body>
     <div class="wrapper">
       <!-----------------------------header---------------------------------------->
-        <div id="hamburger-menu">
-          <div class="close-ham-wrapper">
-            <i class="fa fa-times" id="close-ham"></i>
-          </div>
-          <div class="ham-links">
-            <div>
-                <a href="#">About Us</a>
-            </div>
-            <div>
-                <a href="#">Services</a>
-            </div>
-            <div>
-                <a href="#">Bertinity Coin</a>
-            </div>
-            <div>
-                <a href="https://www.bertinity.com/images/roadmap.png">RoadMap</a>
-            </div>
-            <div>
-                <a href="https://www.bertinity.com/PDF/whitepaper.pdf">Whitepaper</a>
-            </div>
-            <div>
-                <a href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-        <header class="header">
-            <img src="<?php echo get_template_directory_uri();?>/images/headerLogo.png" class="header-logo" alt="logo">
-            <div class="header-links">
-                <div>
-                      <a href="#">About Us</a>
+        <header id="header" class="header">
+            <a id="header-logo" href="localhost/wordpress"><img src="<?php echo get_template_directory_uri();?>/images/headerLogo.png" class="header-logo" alt="logo"></a>
+                <div id="close-ham-wrapper" class="close-ham-wrapper">
+                  <i class="fa fa-times" id="close-ham"></i>
                 </div>
-                <div>
-                      <a href="#">Services</a>
-                </div>
-                <div>
-                      <a href="#">Bertinity Coin</a>
-                </div>
-                <div>
-                  <a href="https://www.bertinity.com/images/roadmap.png">RoadMap</a>
-                </div>
-                <div>
-                    <a href="https://www.bertinity.com/PDF/whitepaper.pdf">Whitepaper</a>
-                </div>
-                <div>
-                      <a href="#">Contact</a>
-                </div>
-            </div>
+                <?php  
+                  wp_nav_menu(
+                    array(
+                      'menu' => 'primary-menu',
+                      'container' => '',
+                      'items_wrap' => '<div id="header-links" class="header-links">%3$s</div>'
+                    )
+                  )
+                ?>
             <div id="hamburger-button">
               <i class="fa fa-bars"></i>
             </div>

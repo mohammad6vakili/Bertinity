@@ -1,13 +1,25 @@
 //----------------------------------------Hamburger Menu------------------------------------
-const hamMenu=document.getElementById('hamburger-menu');
+const header=document.getElementById('header');
+const hamBtn=document.getElementById("hamburger-button");
+const headerLogo=document.getElementById("header-logo");
+const closeHamBtn=document.getElementById("close-ham-wrapper");
+const headerLinks=document.getElementById("header-links");
 document.getElementById('hamburger-button').onclick=()=>{
-    hamMenu.classList.add('hamburger-open');
-    hamMenu.style.display='block';
+    header.classList.add('header-ham');
+    header.style.display='block';
+    hamBtn.style.display="none";
+    headerLogo.style.display="none";
+    closeHamBtn.style.display="flex";
+    headerLinks.classList.add("show-menu");
 };
 document.getElementById('close-ham').onclick=()=>{
-    hamMenu.style.display='none';
-    hamMenu.classList.remove('hamburger-open');
-}
+    header.style.display='flex';
+    header.classList.remove('header-ham');
+    hamBtn.style.display="flex"
+    headerLogo.style.display="block";
+    closeHamBtn.style.display="none";
+    headerLinks.classList.remove("show-menu");
+  }
 //------------------------------------------carousel----------------------------------------
   $('.carousel').carousel({
       interval: 6000
