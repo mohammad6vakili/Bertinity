@@ -20,7 +20,7 @@
     <div class="wrapper">
       <!-----------------------------header---------------------------------------->
         <header id="header" class="header">
-            <a id="header-logo" href="localhost/wordpress"><img src="<?php echo get_template_directory_uri();?>/images/headerLogo.png" class="header-logo" alt="logo"></a>
+            <a id="header-logo" href="https://bertinity.com"><img src="<?php echo get_template_directory_uri();?>/images/headerLogo.png" class="header-logo" alt="logo"></a>
                 <div id="close-ham-wrapper" class="close-ham-wrapper">
                   <i class="fa fa-times" id="close-ham"></i>
                 </div>
